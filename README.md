@@ -1,11 +1,11 @@
-YouTube Watch Party – Frontend
+# YouTube Watch Party – Frontend
 This is the React frontend for the YouTube Watch Party application, allowing multiple users to watch YouTube videos together in real-time. Users can chat, and hosts/moderators have playback controls to synchronize the video for all participants.
 
-Live Demo
+# Live Demo
 Frontend (Vercel):https://watch-party-snowy.vercel.app
 Backend (Render):https://watch-party-kad7.onrender.com
 
-Features
+# Features
 Join or create watch rooms with unique Room IDs
 Host and Moderator controls: Play, Pause, Seek, Change Video
 Participants watch-only mode
@@ -15,7 +15,7 @@ Chat inside rooms
 Popup notification for participants removed by Host
 SPA support for refreshing inside rooms
 
-Tech Stack
+# Tech Stack
 React – Frontend UI
 Socket.IO Client – Real-time communication with backend
 YouTube IFrame API – Embedded controllable video player
@@ -34,49 +34,56 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-Setup & Installation
+# Setup & Installation
 Clone the repository
 git clone <your-repo-url>
 cd watch-party/frontend
 
-Install dependencies
+# Install dependencies
 npm install
 
-Update backend URL in App.jsx:
+# Update backend URL in App.jsx:
 socketRef.current = io("https://watch-party-kad7.onrender.com");
 
-Run the frontend locally
+# Run the frontend locally
 npm start
 The app will be available at http://localhost:5001.
 
-Configuration
+# Configuration
 Socket.IO URL: Set to your deployed backend URL for production.
 Room IDs & Usernames: Users can join rooms by entering an existing room ID or creating a new one.
 
-Running Locally with Backend
+# Running Locally with Backend
 Make sure your backend server is running (on Render or locally)
 
-Start frontend:
+# Start frontend:
 npm start
 Open in browser: http://localhost:5001
 Test video playback synchronization, chat, and role assignment
 
-Deployment
+# Deployment
 Vercel Deployment:
 Build frontend for production:
 npm run build
 
-Deploy the build/ folder to Vercel (or link project using Vercel CLI or GitHub integration)
+# Deploy the build/ folder to Vercel (or link project using Vercel CLI or GitHub integration)
 Ensure backend URL in App.jsx points to Render deployment URL
 
-Folder Structure
+# Folder Structure
 client/
-├── public/                # Static assets
+
+├── public/
+# Static assets
 ├── src/
-│   ├── App.jsx            # Main application
-│   ├── index.js           # React entry point
-│   └── ...                # Components, styles
-├── package.json           # Dependencies and scripts
+
+│   ├── App.jsx
+# Main application
+│   ├── index.js  
+# React entry point
+│   └── ...    
+# Components, styles
+├── package.json
+# Dependencies and scripts
 └── README.md
 
 Notes
