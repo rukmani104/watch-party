@@ -50,7 +50,8 @@ function App() {
       setChatMessages((prev) => [...prev, { username, message }]);
     });
 
-    socketRef.current.on("removed", () => {
+    // BUG FIX 1: Changed "removed" to "removed_by_host" to match the server event
+    socketRef.current.on("removed_by_host", () => {
       alert("You have been removed from the room.");
       setJoined(false);
       setRoomId("");
