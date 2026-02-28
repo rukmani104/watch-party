@@ -170,6 +170,7 @@ function App() {
                   {roomData.users[socketRef.current?.id]?.role === "HOST" && user.role !== "HOST" && (
                     <div>
                       <button onClick={() => socketRef.current.emit("make_host", { roomId, userId: id })} style={{ marginRight: "5px", padding: "4px 8px", borderRadius: "6px", cursor: "pointer" }}>Make Host</button>
+                      <button onClick={() => socketRef.current.emit("make_moderator", { roomId, userId: id})} style={{ marginRight: "5px", padding: "4px 8px", borderRadius: "6px", cursor: "pointer" }}>Make Moderator</button>
                       <button onClick={() => socketRef.current.emit("remove_user", { roomId, userId: id })} style={{ padding: "4px 8px", borderRadius: "6px", cursor: "pointer" }}>Remove</button>
                     </div>
                   )}
