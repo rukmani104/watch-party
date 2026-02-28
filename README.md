@@ -75,21 +75,21 @@ Ensure backend URL in App.jsx points to Render deployment URL
 # Folder Structure
 client/
 
-├── public/
-# Static assets
+├── public/         # Static assets
+
 ├── src/
 
-│   ├── App.jsx
-# Main application
-│   ├── index.js  
-# React entry point
-│   └── ...    
-# Components, styles
-├── package.json
-# Dependencies and scripts
+│   ├── App.jsx     # Main application
+
+│   ├── index.js    # React entry point
+
+│   └── ...         # Components, styles
+
+├── package.json    # Dependencies and scripts
+
 └── README.md
 
-Notes
+# Notes
 Only Host and Moderator can control playback
 Participants cannot play/pause, seek, or change videos
 Removed participants receive a popup alert on their screen
