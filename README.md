@@ -91,8 +91,13 @@ client/
 
 # Notes
 Only Host and Moderator can control playback
+
 Participants cannot play/pause, seek, or change videos
+
 Removed participants receive a popup alert on their screen
+
 Moderator buttons are visible only when assigned
+
 Chat messages are synced in real-time
+
 The frontend is deployed on Vercel, backend on Render
