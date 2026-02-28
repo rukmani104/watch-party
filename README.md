@@ -17,8 +17,11 @@ SPA support for refreshing inside rooms
 
 # Tech Stack
 React – Frontend UI
+
 Socket.IO Client – Real-time communication with backend
+
 YouTube IFrame API – Embedded controllable video player
+
 CSS / Inline Styling – Clean, responsive UI
 
 # React + Vite
