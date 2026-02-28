@@ -27,7 +27,7 @@ function App() {
 
   // Socket initialization
   useEffect(() => {
-    socketRef.current = io("http://localhost:5000");
+    socketRef.current = io("https://watch-party-kad7.onrender.com");
 
     socketRef.current.on("sync_state", ({ videoId, currentTime, isPlaying }) => {
       setVideoId(videoId);
